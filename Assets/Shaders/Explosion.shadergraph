@@ -263,20 +263,6 @@
         {
             "m_OutputSlot": {
                 "m_Node": {
-                    "m_Id": "4a5868eda5ad4dc3a933f6a54cb39cbe"
-                },
-                "m_SlotId": 0
-            },
-            "m_InputSlot": {
-                "m_Node": {
-                    "m_Id": "9893665a1a52404bb39ff34335a481b8"
-                },
-                "m_SlotId": 1
-            }
-        },
-        {
-            "m_OutputSlot": {
-                "m_Node": {
                     "m_Id": "631c3d4d07114a27a5bb12921784030a"
                 },
                 "m_SlotId": 0
@@ -305,15 +291,15 @@
         {
             "m_OutputSlot": {
                 "m_Node": {
-                    "m_Id": "6c500b250faa4b408a0528757665f511"
+                    "m_Id": "6a4753ad85d44bbdbb5c5619362d8ea8"
                 },
-                "m_SlotId": 0
+                "m_SlotId": 2
             },
             "m_InputSlot": {
                 "m_Node": {
-                    "m_Id": "9cec922305e74e29bdd835097fd2dd91"
+                    "m_Id": "9893665a1a52404bb39ff34335a481b8"
                 },
-                "m_SlotId": 0
+                "m_SlotId": 1
             }
         },
         {
@@ -424,6 +410,20 @@
             "m_InputSlot": {
                 "m_Node": {
                     "m_Id": "3afde656aa5b4369b183441f3ca9c050"
+                },
+                "m_SlotId": 0
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
+                    "m_Id": "bff9f889d67c44e4b06f5e28f36c63ae"
+                },
+                "m_SlotId": 1
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "9cec922305e74e29bdd835097fd2dd91"
                 },
                 "m_SlotId": 0
             }
@@ -3130,7 +3130,7 @@
     "m_CustomColors": {
         "m_SerializableColors": []
     },
-    "m_OutputChannel": 0
+    "m_OutputChannel": 1
 }
 
 {
@@ -3379,7 +3379,7 @@
     "m_CustomColors": {
         "m_SerializableColors": []
     },
-    "m_OutputChannel": 0
+    "m_OutputChannel": 1
 }
 
 {

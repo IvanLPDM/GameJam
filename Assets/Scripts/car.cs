@@ -13,6 +13,7 @@ public class car : MonoBehaviour
     public Transform target;
     private Rigidbody rb;
     private bool blind = false;
+    private bool explode = false;
 
     void Start()
     {
@@ -42,19 +43,18 @@ public class car : MonoBehaviour
 
     public void SetStop(bool condition)
     {
-        if (!blind)
+        if (!blind && !explode)
         {
             stop = condition;
         }
     }
 
-    //dejar ciego
-    private void OnTriggerEnter(Collider other)
+    public void SetExplode(bool condition)
     {
-        if (other.CompareTag("cegador"))
-        {
-            blind = true;
-        }
+        explode = condition;
     }
+
+    //dejar ciego
+    
 
 }
