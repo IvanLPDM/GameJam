@@ -418,7 +418,8 @@ MonoBehaviour:
   brake_speed: 0.9
   stop: 0
   target: {fileID: 0}
-  detector_collision: {fileID: 0}
+  Explosion: {fileID: 0}
+  Explosion_Vertical: {fileID: 0}
 --- !u!1 &3410240953704993075
 GameObject:
   m_ObjectHideFlags: 0
