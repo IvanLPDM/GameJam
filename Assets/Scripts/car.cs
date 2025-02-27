@@ -37,6 +37,11 @@ public class car : MonoBehaviour
             {
                 Vector3 direction = (target.position - transform.position).normalized;
                 rb.MovePosition(transform.position + direction * speed * Time.fixedDeltaTime);
+
+                if(Vector3.Distance(transform.position, target.position) <= 0.5f)
+                {
+                    Destroy(gameObject);
+                }
             }
      
     }
