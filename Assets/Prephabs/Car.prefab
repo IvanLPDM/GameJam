@@ -420,6 +420,8 @@ MonoBehaviour:
   stop: 0
   target: {fileID: 0}
   dust: {fileID: 846848357324038516, guid: 9a9385493712d7643b347a6122d6a1dd, type: 3}
+  maxTime: 3
+  timerCount: 0
 --- !u!1 &3410240953704993075
 GameObject:
   m_ObjectHideFlags: 0
@@ -547,8 +549,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.2171483, y: 0.1829344, z: 0.76841867}
-  m_Center: {x: -0.0040072203, y: 0.10843831, z: 0.8143449}
+  m_Size: {x: 0.2171483, y: 0.1829344, z: 0.9421845}
+  m_Center: {x: -0.0040072203, y: 0.10843831, z: 0.9012278}
 --- !u!114 &3410240954414572897
 MonoBehaviour:
   m_ObjectHideFlags: 0

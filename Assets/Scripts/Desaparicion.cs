@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class Desaparicion : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private float timer = 5f;
+    
 
     // Update is called once per frame
     void Update()
     {
-        
+        timer -= Time.deltaTime;
+        if (timer < 0)
+        {
+            Destroy(this.gameObject);
+        }
     }
 }

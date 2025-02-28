@@ -13,7 +13,7 @@ public class car : MonoBehaviour
     public bool stop;
     public Transform target;
     public GameObject dust;
-    public float maxTime;
+    public float maxTime = 5;
     public float timerCount;
     private Rigidbody rb;
     private bool blind = false;
@@ -36,6 +36,8 @@ public class car : MonoBehaviour
         if (collision.gameObject.CompareTag("Car"))
         {
             Instantiate(dust, this.transform.position, this.transform.rotation);
+            FindObjectOfType<SoundManager>().PlaySound("choque");
+            FindObjectOfType<ManageScene>().CarDespawn(true);
             Destroy(this.gameObject);
         }
     }
@@ -68,14 +70,33 @@ public class car : MonoBehaviour
 
         if (Vector3.Distance(transform.position, target.position) <= 0.5f)
         {
+            FindObjectOfType<ManageScene>().CarDespawn(false);
             Destroy(gameObject);
+        }
+    }
+
+    private void CounterPiPiPi()
+    {
+        if (stop)
+        {
+            timerCount -= Time.deltaTime;
+            if (timerCount <= 0)
+            {
+                //PITA
+                Debug.Log("PIPIPIPIPIPIPII");
+                FindObjectOfType<SoundManager>().PlaySound("pipi");
+            }
+        }
+        else
+        {
+            timerCount = maxTime;
         }
     }
     
     void FixedUpdate()
     {
         Movement();
-
+        CounterPiPiPi();
     }
 
     public void SetStop(bool condition)
