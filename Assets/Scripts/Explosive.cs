@@ -12,9 +12,11 @@ public class Explosive : MonoBehaviour
     public ParticleSystem Explosion;
     public ParticleSystem Explosion_Vertical;
     public car carController;
+    public AudioSource sound;
 
     void Explode()
     {   
+        sound.Play();
         Collider[] colliders = Physics.OverlapSphere(transform.position, explosionRadius);
 
         foreach (Collider nearbyObject in colliders)

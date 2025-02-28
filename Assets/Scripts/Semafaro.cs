@@ -10,6 +10,7 @@ public class Semafaro : MonoBehaviour
     public Light light;
     public Color red;
     public Color green;
+    public AudioSource audioSource;
 
     private void Update()
     {
@@ -25,6 +26,7 @@ public class Semafaro : MonoBehaviour
         //Input
         if (Input.GetKeyDown(key))
         {
+            audioSource.Play();
             stop = !stop;
         }
     }
