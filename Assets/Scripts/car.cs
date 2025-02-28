@@ -9,8 +9,12 @@ public class car : MonoBehaviour
     public float speed;
     public float acceleration;
     public float brake_speed;
+    public float maxSpeed;
     public bool stop;
     public Transform target;
+    public GameObject dust;
+    public float maxTime;
+    public float timerCount;
     private Rigidbody rb;
     private bool blind = false;
     private bool explode = false;
@@ -18,6 +22,7 @@ public class car : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        timerCount = maxTime;
     }
 
     // Update is called once per frame
@@ -25,25 +30,52 @@ public class car : MonoBehaviour
     {
         
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Car"))
+        {
+            Instantiate(dust, this.transform.position, this.transform.rotation);
+            Destroy(this.gameObject);
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("cegador"))
+        {
+            stop = false;
+            blind = true;
+        }
+    }
+
+    private void Movement()
+    {
+        Vector3 direction = (target.position - transform.position).normalized;
+
+        if (stop)
+        {
+            speed -= brake_speed;
+            if (speed < 0) speed = 0;
+        }
+        else
+        {
+            speed += acceleration;
+            if (speed > maxSpeed) speed = maxSpeed;
+        }
+
+        rb.MovePosition(transform.position + direction * speed * Time.fixedDeltaTime);
+
+        if (Vector3.Distance(transform.position, target.position) <= 0.5f)
+        {
+            Destroy(gameObject);
+        }
+    }
     
     void FixedUpdate()
     {
-        
-            if (stop)
-            {
-                rb.velocity *= brake_speed;
-            }
-            else
-            {
-                Vector3 direction = (target.position - transform.position).normalized;
-                rb.MovePosition(transform.position + direction * speed * Time.fixedDeltaTime);
+        Movement();
 
-                if(Vector3.Distance(transform.position, target.position) <= 0.5f)
-                {
-                    Destroy(gameObject);
-                }
-            }
-     
     }
 
     public void SetStop(bool condition)

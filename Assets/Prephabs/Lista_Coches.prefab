@@ -51,7 +51,7 @@ MonoBehaviour:
   target_: {fileID: 3051885979020193178}
   spawnLocation: {fileID: 3051885977622651377}
   minSpawnInterval: 1
-  maxSpawnInterval: 2
+  maxSpawnInterval: 3
   space: 1
 --- !u!65 &3051885977622651390
 BoxCollider:
