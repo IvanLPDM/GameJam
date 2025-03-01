@@ -30,11 +30,13 @@ public class ManageScene : MonoBehaviour
         if (numCars == 0)
         {
             //WIN
+            FindObjectOfType<MenuLevel>().Win();
             Debug.Log("HAS GANADO");
         }
         else if (numCarsDestroyed >= numCarsToLose)
         {
             //LOSE
+            FindObjectOfType<MenuLevel>().Lose();
             Debug.Log("HAS PERDIDO");
         }
         //Debug.Log(numCars);
