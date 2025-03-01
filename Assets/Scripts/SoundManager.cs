@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SoundManager : MonoBehaviour
 {
-    public AudioSource choque, pipi;
+    public AudioSource choque, pipi, explosion;
 
     public void PlaySound(string name)
     {
@@ -12,6 +12,7 @@ public class SoundManager : MonoBehaviour
         {
             case "choque": onPlay(choque); break;
             case "pipi": onPlay(pipi); break;
+            case "explosion": onPlay(explosion); break;
         }
     }
 
