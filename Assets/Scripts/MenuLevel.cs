@@ -10,7 +10,7 @@ public class MenuLevel : MonoBehaviour
     void Start()
     {
         lose.SetActive(false);
-        win.SetActive(false);
+        //win.SetActive(false);
     }
 
     public void Restart()
