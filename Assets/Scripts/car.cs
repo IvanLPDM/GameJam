@@ -11,7 +11,7 @@ public class car : MonoBehaviour
     public float brake_speed;
     public float maxSpeed;
     public bool stop;
-    public float maxTime = 5;
+    public float maxTime = 20;
     public MeshRenderer carRenderer;
     public Material ghostMaterial;
 
