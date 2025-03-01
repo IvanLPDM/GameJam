@@ -4,31 +4,43 @@ using UnityEngine;
 
 public class SoundManager : MonoBehaviour
 {
-    public AudioSource choque, pipi, explosion;
+    public AudioClip choque, pipi, explosion, bandaSonora, sonidoAmbiental;
+    public AudioSource audioSource_SFX;
+    public AudioSource audioSource_BGM;
+    void Start()
+    {
+        audioSource_SFX = GetComponent<AudioSource>();
+        audioSource_BGM = GetComponent<AudioSource>();
+
+        audioSource_BGM.PlayOneShot(bandaSonora);
+        audioSource_BGM.PlayOneShot(sonidoAmbiental);
+        audioSource_BGM.loop = true;
+    }
 
     public void PlaySound(string name)
     {
         switch (name)
         {
-            case "choque": onPlay(choque); break;
-            case "pipi": onPlay(pipi); break;
-            case "explosion": onPlay(explosion); break;
+            
+                case "choque": audioSource_SFX.PlayOneShot(choque); break;
+                case "pipi": audioSource_SFX.PlayOneShot(pipi); break;
+                case "explosion": audioSource_SFX.PlayOneShot(explosion); break;
         }
     }
 
-    private void onPlay(AudioSource sc)
-    {
-        if (!sc.isPlaying)
-        {
-            sc.Play();
-        }
-    }
+    //private void onPlay(AudioSource sc)
+    //{
+    //    if (!sc.isPlaying)
+    //    {
+    //        sc.Play();
+    //    }
+    //}
 
-    // Start is called before the first frame update
-    void Start()
+    public void StopSound_Bucle()
     {
-
+        audioSource_BGM.Stop();
     }
+    
 
     // Update is called once per frame
     void Update()

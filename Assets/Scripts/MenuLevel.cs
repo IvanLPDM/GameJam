@@ -18,16 +18,21 @@ public class MenuLevel : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-        { 
-            Debug.Log("space");
-            Win();
-        }
+        //if (Input.GetKeyDown(KeyCode.Alpha1))
+        //{ 
+        //    Debug.Log("space");
+        //    Lose();
+        //}
     }
 
     public void Restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void NextLevel(string level)
+    {
+        SceneManager.LoadScene(level);
     }
 
     public void MainMenu()
