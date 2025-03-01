@@ -6,17 +6,22 @@ using UnityEngine.EventSystems;
 public class Button_sound : MonoBehaviour
 {
     public AudioClip hoverSound;
-    public AudioSource audioSource;
+    public AudioClip clickAudio;
+    private AudioSource audioSource;
 
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
     }
 
-    public void OnPointerEnter(PointerEventData eventData)
+    public void SwitchAudio()
     {
-        Debug.Log("Suena");
+        Debug.Log("Suena!");
         audioSource.PlayOneShot(hoverSound);
+    }
 
+    public void click()
+    {
+        audioSource.PlayOneShot(clickAudio);
     }
 }
