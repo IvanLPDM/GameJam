@@ -3357,7 +3357,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c21b640f92979264cba4c7c5cf5e261d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numCarsToLose: 2
+  numCarsToLose: 12
   soundManager: {fileID: 1650825537}
 --- !u!1001 &448624076
 PrefabInstance:
@@ -9336,7 +9336,7 @@ PrefabInstance:
       objectReference: {fileID: 7907855503184602403, guid: ff15788f5e4d1a646bb0888955c53b21, type: 3}
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: numCars
-      value: 8
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: fantasma
@@ -9344,7 +9344,7 @@ PrefabInstance:
       objectReference: {fileID: 7625485007339855912, guid: ee0e399201d9dbf4e9a20e833928006b, type: 3}
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: numBombas
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: numCamiones
@@ -9527,7 +9527,7 @@ PrefabInstance:
       objectReference: {fileID: 7907855503184602403, guid: ff15788f5e4d1a646bb0888955c53b21, type: 3}
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: numCars
-      value: 8
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: fantasma
@@ -9535,7 +9535,7 @@ PrefabInstance:
       objectReference: {fileID: 7625485007339855912, guid: ee0e399201d9dbf4e9a20e833928006b, type: 3}
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: numBombas
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: numCamiones
@@ -13066,7 +13066,7 @@ PrefabInstance:
       objectReference: {fileID: 7907855503184602403, guid: ff15788f5e4d1a646bb0888955c53b21, type: 3}
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: numCars
-      value: 8
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: fantasma
@@ -13074,7 +13074,7 @@ PrefabInstance:
       objectReference: {fileID: 7625485007339855912, guid: ee0e399201d9dbf4e9a20e833928006b, type: 3}
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: numBombas
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: numCamiones
@@ -13974,7 +13974,7 @@ PrefabInstance:
       objectReference: {fileID: 7907855503184602403, guid: ff15788f5e4d1a646bb0888955c53b21, type: 3}
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: numCars
-      value: 8
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: fantasma
@@ -13982,7 +13982,7 @@ PrefabInstance:
       objectReference: {fileID: 7625485007339855912, guid: ee0e399201d9dbf4e9a20e833928006b, type: 3}
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: numBombas
-      value: 0
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: numCamiones
