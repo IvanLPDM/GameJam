@@ -2183,6 +2183,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: trafficlight_C (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6401235648813271361, guid: c3b54e36eb2e70a4a93233fe5d0bf325, type: 3}
+      propertyPath: m_Size.z
+      value: 0.99133694
+      objectReference: {fileID: 0}
+    - target: {fileID: 6401235648813271361, guid: c3b54e36eb2e70a4a93233fe5d0bf325, type: 3}
+      propertyPath: m_Center.x
+      value: 9.174612e-16
+      objectReference: {fileID: 0}
+    - target: {fileID: 6401235648813271361, guid: c3b54e36eb2e70a4a93233fe5d0bf325, type: 3}
+      propertyPath: m_Center.y
+      value: -2.070207e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 6401235648813271361, guid: c3b54e36eb2e70a4a93233fe5d0bf325, type: 3}
+      propertyPath: m_Center.z
+      value: -0.0043315142
+      objectReference: {fileID: 0}
     - target: {fileID: 6401235648813271390, guid: c3b54e36eb2e70a4a93233fe5d0bf325, type: 3}
       propertyPath: key
       value: 49
@@ -8401,6 +8417,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 439376776}
     m_Modifications:
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
+      propertyPath: camion
+      value: 
+      objectReference: {fileID: 5896105231422885859, guid: f96276475d46c8d40b26718ac4d752fd, type: 3}
+    - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: ferrari
       value: 
       objectReference: {fileID: 7907855503184602403, guid: ff15788f5e4d1a646bb0888955c53b21, type: 3}
@@ -8409,8 +8429,24 @@ PrefabInstance:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
+      propertyPath: fantasma
+      value: 
+      objectReference: {fileID: 7625485007339855912, guid: ee0e399201d9dbf4e9a20e833928006b, type: 3}
+    - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
+      propertyPath: numBombas
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
+      propertyPath: numCamiones
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: numFerraris
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
+      propertyPath: numFantasmas
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3051885977622651377, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: m_RootOrder
@@ -8463,6 +8499,14 @@ PrefabInstance:
     - target: {fileID: 3051885977622651379, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: m_Name
       value: Lista_Coches (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3051885977622651390, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
+      propertyPath: m_Size.z
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3051885977622651390, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
+      propertyPath: m_Center.z
+      value: 1.55
       objectReference: {fileID: 0}
     - target: {fileID: 3051885979020193178, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8560,6 +8604,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 439376776}
     m_Modifications:
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
+      propertyPath: camion
+      value: 
+      objectReference: {fileID: 5896105231422885859, guid: f96276475d46c8d40b26718ac4d752fd, type: 3}
+    - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: ferrari
       value: 
       objectReference: {fileID: 7907855503184602403, guid: ff15788f5e4d1a646bb0888955c53b21, type: 3}
@@ -8568,8 +8616,24 @@ PrefabInstance:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
+      propertyPath: fantasma
+      value: 
+      objectReference: {fileID: 7625485007339855912, guid: ee0e399201d9dbf4e9a20e833928006b, type: 3}
+    - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
+      propertyPath: numBombas
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
+      propertyPath: numCamiones
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: numFerraris
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
+      propertyPath: numFantasmas
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3051885977622651377, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: m_RootOrder
@@ -8622,6 +8686,14 @@ PrefabInstance:
     - target: {fileID: 3051885977622651379, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: m_Name
       value: Lista_Coches (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3051885977622651390, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
+      propertyPath: m_Size.z
+      value: 2.94
+      objectReference: {fileID: 0}
+    - target: {fileID: 3051885977622651390, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
+      propertyPath: m_Center.z
+      value: 1.56
       objectReference: {fileID: 0}
     - target: {fileID: 3051885979020193178, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11489,6 +11561,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 439376776}
     m_Modifications:
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
+      propertyPath: camion
+      value: 
+      objectReference: {fileID: 5896105231422885859, guid: f96276475d46c8d40b26718ac4d752fd, type: 3}
+    - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: ferrari
       value: 
       objectReference: {fileID: 7907855503184602403, guid: ff15788f5e4d1a646bb0888955c53b21, type: 3}
@@ -11497,8 +11573,24 @@ PrefabInstance:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
+      propertyPath: fantasma
+      value: 
+      objectReference: {fileID: 7625485007339855912, guid: ee0e399201d9dbf4e9a20e833928006b, type: 3}
+    - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
+      propertyPath: numBombas
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
+      propertyPath: numCamiones
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: numFerraris
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
+      propertyPath: numFantasmas
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3051885977622651377, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: m_RootOrder
@@ -11551,6 +11643,14 @@ PrefabInstance:
     - target: {fileID: 3051885977622651379, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: m_Name
       value: Lista_Coches (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3051885977622651390, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
+      propertyPath: m_Size.z
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3051885977622651390, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
+      propertyPath: m_Center.z
+      value: 1.37
       objectReference: {fileID: 0}
     - target: {fileID: 3051885979020193181, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: m_Icon
@@ -12126,6 +12226,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 439376776}
     m_Modifications:
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
+      propertyPath: camion
+      value: 
+      objectReference: {fileID: 5896105231422885859, guid: f96276475d46c8d40b26718ac4d752fd, type: 3}
+    - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: ferrari
       value: 
       objectReference: {fileID: 7907855503184602403, guid: ff15788f5e4d1a646bb0888955c53b21, type: 3}
@@ -12134,8 +12238,24 @@ PrefabInstance:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
+      propertyPath: fantasma
+      value: 
+      objectReference: {fileID: 7625485007339855912, guid: ee0e399201d9dbf4e9a20e833928006b, type: 3}
+    - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
+      propertyPath: numBombas
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
+      propertyPath: numCamiones
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: numFerraris
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
+      propertyPath: numFantasmas
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3051885977622651377, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: m_RootOrder
@@ -12188,6 +12308,14 @@ PrefabInstance:
     - target: {fileID: 3051885977622651379, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: m_Name
       value: Lista_Coches
+      objectReference: {fileID: 0}
+    - target: {fileID: 3051885977622651390, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
+      propertyPath: m_Size.z
+      value: 3.0360658
+      objectReference: {fileID: 0}
+    - target: {fileID: 3051885977622651390, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
+      propertyPath: m_Center.z
+      value: 1.5140063
       objectReference: {fileID: 0}
     - target: {fileID: 3051885979020193181, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: m_Icon
