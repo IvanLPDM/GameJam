@@ -16,7 +16,6 @@ public class Button_sound : MonoBehaviour
 
     public void SwitchAudio()
     {
-        Debug.Log("Suena!");
         audioSource.PlayOneShot(hoverSound);
     }
 

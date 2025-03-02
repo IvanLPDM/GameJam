@@ -20,9 +20,9 @@ public class MainMenu : MonoBehaviour
         levels.SetActive(false);
     }
 
-    public void PlayGame(string sceneName)
+    public void PlayGame()
     {
-        SceneManager.LoadScene(sceneName);
+        SceneManager.LoadScene(1);
     }
 
     public void Credits(string sceneName)

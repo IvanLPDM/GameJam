@@ -4,12 +4,13 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using static System.Net.Mime.MediaTypeNames;
 
 public class MenuLevel : MonoBehaviour
 {
     public GameObject lose, win, pause, ui_game;
     public AudioClip win_audio, lose_audio;
-    public Image time_star, cars_star, quejas_star;
+    public UnityEngine.UI.Image time_star, cars_star, quejas_star, time_star_up, cars_star_up, quejas_star_up;
     public Sprite star_win, star_lose;
     public TextMeshProUGUI time_txt, cars_txt, quejas_txt;
     public TextMeshProUGUI time_win_txt, cars_win_txt, quejas_win_txt;
@@ -84,12 +85,15 @@ public class MenuLevel : MonoBehaviour
 
         if(results.numCarsDestroyed <= results.numCarsToStar) cars_star.sprite = star_win;
         else cars_star.sprite = star_lose;
+        cars_star_up.sprite = cars_star.sprite;
 
         if (results.elapsedTime <= results.time_star) time_star.sprite = star_win;
         else time_star.sprite = star_lose;
+        time_star_up.sprite = time_star.sprite;
 
         if (results.quejas <= results.quejasStar) quejas_star.sprite = star_win;
         else quejas_star.sprite = star_lose;
+        quejas_star_up.sprite = quejas_star.sprite;
 
         float elapsedTime = results.elapsedTime;
         int seconds = Mathf.FloorToInt(elapsedTime);

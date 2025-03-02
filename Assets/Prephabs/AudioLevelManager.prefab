@@ -49,7 +49,6 @@ MonoBehaviour:
   choque: {fileID: 8300000, guid: 4fcc317db5bd05b49bd3ac28a1470ed0, type: 3}
   pipi: {fileID: 8300000, guid: f0c10b8d9d8a26c4290d5baab21a1d3a, type: 3}
   explosion: {fileID: 8300000, guid: 13bfd922a645af94881a4f91a8755959, type: 3}
-  bandaSonora: {fileID: 8300000, guid: e1538afd3dd13ea41bc72c8054f8b320, type: 3}
   sonidoAmbiental: {fileID: 8300000, guid: cfca871f57f278c4795b12deb91608eb, type: 3}
   audioSource_SFX: {fileID: 2484189625625879981}
   audioSource_BGM: {fileID: 2484189625625879980}
@@ -159,9 +158,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: e1538afd3dd13ea41bc72c8054f8b320, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.39
+  m_Volume: 0.375
   m_Pitch: 1
   Loop: 1
   Mute: 0
