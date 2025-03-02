@@ -14,15 +14,15 @@ public class Spawneador_coches : MonoBehaviour
     public bool space = true;
     private int numNormalCars;
     private int spawnedCars;
+    private List<GameObject> objetos = new List<GameObject>();
 
     [Header("Modelos coches especiales")]
     public GameObject ferrari;
-    public GameObject bomba, policia, ladron, quitaNieves, camion, fantasma;
+    public GameObject bomba, policia, ladron, quitaNieves, camion, fantasma, limusina;
 
     [Header("Configuración coches especiales")]
     public int numFerraris = 0;
-    public int numBombas = 0, numPoliciasLadron = 0, numQuitaNieves = 0, numCamiones = 0, numFantasmas = 0;
-
+    public int numBombas = 0, numPoliciasLadron = 0, numQuitaNieves = 0, numCamiones = 0, numFantasmas = 0, numLimusinas = 0;
 
     public int getNumCars()
     {
@@ -33,11 +33,6 @@ public class Spawneador_coches : MonoBehaviour
     {
         numNormalCars = numCars - (numFerraris + numBombas + numPoliciasLadron + numQuitaNieves + numCamiones + numFantasmas);
         StartCoroutine(Spawn());
-    }
-
-    void Update()
-    {
-
     }
 
     private GameObject SelectCar()
@@ -53,6 +48,7 @@ public class Spawneador_coches : MonoBehaviour
         for (int i = 0; i < numQuitaNieves; i++) availableCars.Add(quitaNieves);
         for (int i = 0; i < numCamiones; i++) availableCars.Add(camion);
         for (int i = 0; i < numFantasmas; i++) availableCars.Add(fantasma);
+        for (int i = 0; i < numLimusinas; i++) availableCars.Add(limusina);
 
         if (availableCars.Count == 0)
         {
@@ -68,6 +64,7 @@ public class Spawneador_coches : MonoBehaviour
         else if (selectedCar == quitaNieves) numQuitaNieves--;
         else if (selectedCar == camion) numCamiones--;
         else if (selectedCar == fantasma) numFantasmas--;
+        else if (selectedCar == limusina) numLimusinas--;
 
         return selectedCar;
     }
@@ -84,6 +81,7 @@ public class Spawneador_coches : MonoBehaviour
                 GameObject carIterator = Instantiate(c, spawnLocation.position, spawnLocation.rotation);
                 carIterator.GetComponent<car>().target = target_;
                 spawnedCars++;
+                objetos.Add(carIterator);
             }
             else
             {

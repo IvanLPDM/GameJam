@@ -40,6 +40,7 @@ public class car : MonoBehaviour
     private bool blind = false;
     private bool explode = false;
     private ManageScene manageScene;
+    private bool despawned = false;
 
     void Start()
     {
@@ -86,6 +87,11 @@ public class car : MonoBehaviour
         return ghost;
     }
 
+    public bool IsExplosive()
+    {
+        return explosivo;
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
         if (inmortal) return;
@@ -98,11 +104,11 @@ public class car : MonoBehaviour
             else
             {
                 car car_script = collision.gameObject.GetComponent<car>();
-                if (car_script == null || car_script.IsGhost()) return;
+                if (car_script == null || car_script.IsGhost() || car_script.IsExplosive()) return;
 
                 Instantiate(dust, this.transform.position, this.transform.rotation);
                 FindObjectOfType<SoundManager>().PlaySound("choque");
-                FindObjectOfType<ManageScene>().CarDespawn(true);
+                Despawn(true);
                 Destroy(this.gameObject);
             }
         }
@@ -136,7 +142,7 @@ public class car : MonoBehaviour
 
         if (Vector3.Distance(transform.position, target.position) <= 0.5f)
         {
-            FindObjectOfType<ManageScene>().CarDespawn(false);
+            Despawn(false);
             Destroy(gameObject);
         }
     }
@@ -168,6 +174,13 @@ public class car : MonoBehaviour
         CounterPiPiPi();
     }
 
+    private void Despawn(bool condition)
+    {
+        if (despawned) return;
+        manageScene.CarDespawn(true);
+        despawned = true;
+    }
+
     public void SetStop(bool condition)
     {
         if (!blind && !explode)
@@ -184,6 +197,8 @@ public class car : MonoBehaviour
             exp.Explode();
             Destroy(exp);
         }
+
+        Despawn(true);
         Desaparicion des = gameObject.AddComponent<Desaparicion>();
         des.setTimer(2);
         Destroy(this);
