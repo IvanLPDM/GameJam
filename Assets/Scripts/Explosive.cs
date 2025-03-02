@@ -17,7 +17,7 @@ public class Explosive : MonoBehaviour
         carController = GetComponent<car>();
     }
 
-    void Explode()
+    public void Explode()
     {
         FindObjectOfType<SoundManager>().PlaySound("explosion");
 
@@ -34,7 +34,7 @@ public class Explosive : MonoBehaviour
                 if (rb != null)
                 {
                     rb.AddExplosionForce(explosionForce, transform.position, explosionRadius, upwardModifier, ForceMode.Impulse);
-                    carController.SetStop(true);
+                    carController.SetExplode(true);
                     rb.useGravity = false;
                     //carController.SetExplode(true);
                 }
