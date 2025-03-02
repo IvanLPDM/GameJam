@@ -1131,7 +1131,7 @@ MonoBehaviour:
   Green: {fileID: 21300000, guid: 00d71da98167c8d4e9948b2342d18dcb, type: 3}
   key: 51
   on: 1
-  color_off: {r: 0, g: 0, b: 0, a: 0}
+  color_off: {r: 0.254717, g: 0.254717, b: 0.254717, a: 0.43137255}
 --- !u!1001 &145263344
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2408,6 +2408,10 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: -0.0043315142
       objectReference: {fileID: 0}
+    - target: {fileID: 6401235648813271363, guid: c3b54e36eb2e70a4a93233fe5d0bf325, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6401235648813271390, guid: c3b54e36eb2e70a4a93233fe5d0bf325, type: 3}
       propertyPath: key
       value: 49
@@ -2416,6 +2420,10 @@ PrefabInstance:
       propertyPath: audioSource
       value: 
       objectReference: {fileID: 999164336}
+    - target: {fileID: 6401235649128964031, guid: c3b54e36eb2e70a4a93233fe5d0bf325, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6872344137761430071, guid: c3b54e36eb2e70a4a93233fe5d0bf325, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -2879,6 +2887,83 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 763c939f2f87e784e92d77b53f86960b, type: 3}
+--- !u!1001 &361264172
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 904019128}
+    m_Modifications:
+    - target: {fileID: 5817008093561803718, guid: 263b2e4e42afa784291269450554bf4c, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6292824773934483188, guid: 263b2e4e42afa784291269450554bf4c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b2e5c2ea3157f51489c7da067e256992, type: 2}
+    - target: {fileID: 6292824773934483189, guid: 263b2e4e42afa784291269450554bf4c, type: 3}
+      propertyPath: looping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6292824775073293662, guid: 263b2e4e42afa784291269450554bf4c, type: 3}
+      propertyPath: m_Name
+      value: Explosion (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6292824775073293663, guid: 263b2e4e42afa784291269450554bf4c, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6292824775073293663, guid: 263b2e4e42afa784291269450554bf4c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 17.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 6292824775073293663, guid: 263b2e4e42afa784291269450554bf4c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6292824775073293663, guid: 263b2e4e42afa784291269450554bf4c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 9.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 6292824775073293663, guid: 263b2e4e42afa784291269450554bf4c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6292824775073293663, guid: 263b2e4e42afa784291269450554bf4c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6292824775073293663, guid: 263b2e4e42afa784291269450554bf4c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6292824775073293663, guid: 263b2e4e42afa784291269450554bf4c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6292824775073293663, guid: 263b2e4e42afa784291269450554bf4c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6292824775073293663, guid: 263b2e4e42afa784291269450554bf4c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6292824775073293663, guid: 263b2e4e42afa784291269450554bf4c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6292824775317743478, guid: 263b2e4e42afa784291269450554bf4c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b2e5c2ea3157f51489c7da067e256992, type: 2}
+    - target: {fileID: 6292824775317743479, guid: 263b2e4e42afa784291269450554bf4c, type: 3}
+      propertyPath: looping
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 263b2e4e42afa784291269450554bf4c, type: 3}
 --- !u!1001 &362360923
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3467,10 +3552,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c21b640f92979264cba4c7c5cf5e261d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numCarsToStar: 0
-  time_star: 40
-  quejasStar: 4
-  numCarsToLose: 6
+  numCarsToStar: 7
+  time_star: 50
+  quejasStar: 6
+  numCarsToLose: 16
   numCarsDestroyed: 0
   elapsedTime: 0
   quejas: 0
@@ -6494,6 +6579,7 @@ Transform:
   - {fileID: 1150669500}
   - {fileID: 136508008}
   - {fileID: 1393663015}
+  - {fileID: 1079214365}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7384,6 +7470,11 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c795c53160dd40246a10f6a7da0f279d, type: 3}
   m_PrefabInstance: {fileID: 887231055}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1079214365 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6292824775073293663, guid: 263b2e4e42afa784291269450554bf4c, type: 3}
+  m_PrefabInstance: {fileID: 361264172}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1084008844 stripped
 Transform:
@@ -9460,15 +9551,19 @@ PrefabInstance:
       objectReference: {fileID: 7907855503184602403, guid: ff15788f5e4d1a646bb0888955c53b21, type: 3}
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: numCars
-      value: 12
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: fantasma
       value: 
       objectReference: {fileID: 7625485007339855912, guid: ee0e399201d9dbf4e9a20e833928006b, type: 3}
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
+      propertyPath: limusina
+      value: 
+      objectReference: {fileID: 2639275672680302557, guid: edf87c0aedfcfbf48a692d08f3540ffc, type: 3}
+    - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: numBombas
-      value: 8
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: numCamiones
@@ -9476,11 +9571,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: numFerraris
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: numFantasmas
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
+      propertyPath: numLimusinas
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3051885977622651377, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: m_RootOrder
@@ -9658,8 +9757,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 7625485007339855912, guid: ee0e399201d9dbf4e9a20e833928006b, type: 3}
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
+      propertyPath: limusina
+      value: 
+      objectReference: {fileID: 2639275672680302557, guid: edf87c0aedfcfbf48a692d08f3540ffc, type: 3}
+    - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: numBombas
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: numCamiones
@@ -9667,11 +9770,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: numFerraris
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: numFantasmas
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
+      propertyPath: numLimusinas
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3051885977622651377, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: m_RootOrder
@@ -13022,15 +13129,19 @@ PrefabInstance:
       objectReference: {fileID: 7907855503184602403, guid: ff15788f5e4d1a646bb0888955c53b21, type: 3}
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: numCars
-      value: 12
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: fantasma
       value: 
       objectReference: {fileID: 7625485007339855912, guid: ee0e399201d9dbf4e9a20e833928006b, type: 3}
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
+      propertyPath: limusina
+      value: 
+      objectReference: {fileID: 2639275672680302557, guid: edf87c0aedfcfbf48a692d08f3540ffc, type: 3}
+    - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: numBombas
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: numCamiones
@@ -13038,11 +13149,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: numFerraris
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: numFantasmas
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
+      propertyPath: numLimusinas
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3051885977622651377, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: m_RootOrder
@@ -13460,8 +13575,8 @@ MonoBehaviour:
   Red: {fileID: 21300000, guid: 28e9eb2a6c0e4b149b5e3f32252c088d, type: 3}
   Green: {fileID: 21300000, guid: e1715767aea9e2f40ab8fbbf54765e6a, type: 3}
   key: 49
-  on: 1
-  color_off: {r: 0, g: 0, b: 0, a: 0}
+  on: 0
+  color_off: {r: 0.1509434, g: 0.1509434, b: 0.1509434, a: 0.7529412}
 --- !u!4 &2080341347 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 36604f7c00a98bc4c84c7339cfb8b830, type: 3}
@@ -13478,6 +13593,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: trafficlight_C (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6401235648813271363, guid: c3b54e36eb2e70a4a93233fe5d0bf325, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6401235648813271390, guid: c3b54e36eb2e70a4a93233fe5d0bf325, type: 3}
       propertyPath: key
       value: 51
@@ -13486,6 +13605,10 @@ PrefabInstance:
       propertyPath: audioSource
       value: 
       objectReference: {fileID: 27988140}
+    - target: {fileID: 6401235649128964031, guid: c3b54e36eb2e70a4a93233fe5d0bf325, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6872344137761430071, guid: c3b54e36eb2e70a4a93233fe5d0bf325, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -13840,8 +13963,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 7625485007339855912, guid: ee0e399201d9dbf4e9a20e833928006b, type: 3}
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
+      propertyPath: limusina
+      value: 
+      objectReference: {fileID: 2639275672680302557, guid: edf87c0aedfcfbf48a692d08f3540ffc, type: 3}
+    - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: numBombas
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: numCamiones
@@ -13849,11 +13976,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: numFerraris
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: numFantasmas
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
+      propertyPath: numLimusinas
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3051885977622651377, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: m_RootOrder
