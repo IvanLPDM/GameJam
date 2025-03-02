@@ -53,19 +53,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1753164324039152284, guid: 20cb68c706b999b46b39d414b04eb7d0, type: 3}
       propertyPath: m_Size.y
-      value: 0.4594807
+      value: 0.41851276
       objectReference: {fileID: 0}
     - target: {fileID: 1753164324039152284, guid: 20cb68c706b999b46b39d414b04eb7d0, type: 3}
       propertyPath: m_Size.z
-      value: 1.1542792
+      value: 1.0632476
       objectReference: {fileID: 0}
     - target: {fileID: 1753164324039152284, guid: 20cb68c706b999b46b39d414b04eb7d0, type: 3}
       propertyPath: m_Center.y
-      value: 0.17572233
+      value: 0.15994266
       objectReference: {fileID: 0}
     - target: {fileID: 1753164324039152284, guid: 20cb68c706b999b46b39d414b04eb7d0, type: 3}
       propertyPath: m_Center.z
-      value: 0.012592316
+      value: 0.008033216
+      objectReference: {fileID: 0}
+    - target: {fileID: 1753164324039152285, guid: 20cb68c706b999b46b39d414b04eb7d0, type: 3}
+      propertyPath: brake_speed
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 1753164324039152285, guid: 20cb68c706b999b46b39d414b04eb7d0, type: 3}
       propertyPath: carRenderer
@@ -81,19 +85,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3410240954414572902, guid: 20cb68c706b999b46b39d414b04eb7d0, type: 3}
       propertyPath: m_Size.z
-      value: 1.13
+      value: 1.31
       objectReference: {fileID: 0}
     - target: {fileID: 3410240954414572902, guid: 20cb68c706b999b46b39d414b04eb7d0, type: 3}
       propertyPath: m_Center.z
-      value: 1.35
+      value: 1.56
       objectReference: {fileID: 0}
     - target: {fileID: 3948162020807517149, guid: 20cb68c706b999b46b39d414b04eb7d0, type: 3}
       propertyPath: m_Size.z
-      value: 1.13
+      value: 1.31
       objectReference: {fileID: 0}
     - target: {fileID: 3948162020807517149, guid: 20cb68c706b999b46b39d414b04eb7d0, type: 3}
       propertyPath: m_Center.z
-      value: 1.35
+      value: 1.56
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20cb68c706b999b46b39d414b04eb7d0, type: 3}
@@ -119,8 +123,18 @@ MonoBehaviour:
   upwardModifier: 1
   uses: 1
   Explosion: {fileID: 6292824775073293662, guid: 263b2e4e42afa784291269450554bf4c, type: 3}
-  carController: {fileID: 0}
-  sound: {fileID: 0}
+  carController: {fileID: 8126652561639802788}
+--- !u!114 &8126652561639802788 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1753164324039152285, guid: 20cb68c706b999b46b39d414b04eb7d0, type: 3}
+  m_PrefabInstance: {fileID: 7535602838994605369}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5170214626445213923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ae1f1adb4e92894f803e2e1b6f61fb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &8126652561639802795 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1753164324039152274, guid: 20cb68c706b999b46b39d414b04eb7d0, type: 3}

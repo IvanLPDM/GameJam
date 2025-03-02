@@ -11,7 +11,6 @@ public class Explosive : MonoBehaviour
     public int uses = 1;
     public GameObject Explosion;
     public car carController;
-    public AudioSource sound;
 
     void Start()
     {
@@ -46,10 +45,10 @@ public class Explosive : MonoBehaviour
         //carController.SetExplode(true);
     }
     
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision collision)
     {
         
-        if (other.CompareTag("Car"))
+        if (collision.gameObject.CompareTag("Car"))
         {
             if (uses >= 1)
             {

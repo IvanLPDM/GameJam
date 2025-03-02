@@ -187,8 +187,4 @@ public class car : MonoBehaviour
     {
         maxSpeed = initMaxSpeed;
     }
-
-    //dejar ciego
-
-
 }
