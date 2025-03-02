@@ -8,6 +8,8 @@ public class Sprites2D : MonoBehaviour
     public Sprite Green;
     public KeyCode key;
     private SpriteRenderer spriteRenderer;
+    public bool on = true;
+    public Color color_off;
 
     private void Start()
     {
@@ -16,12 +18,17 @@ public class Sprites2D : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetKeyDown(key))
+        if (Input.GetKeyDown(key) && on)
         {
             if(spriteRenderer.sprite == Red)
                 spriteRenderer.sprite = Green;
             else
                 spriteRenderer.sprite = Red;
+        }
+
+        if(!on)
+        {
+            spriteRenderer.color = color_off;
         }
     }
 }
