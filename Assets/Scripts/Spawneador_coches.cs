@@ -87,7 +87,6 @@ public class Spawneador_coches : MonoBehaviour
             }
             else
             {
-                Debug.Log("NO HAY ESPACIO!!!");
                 yield return null;
             }
             
