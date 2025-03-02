@@ -10,10 +10,13 @@ public class VelocityChangeCar : MonoBehaviour
     {
         if (other.CompareTag("Car"))
         {
-            float speed = carController.GetMaxSpeed();
-            float speed2 = other.GetComponent<car>().GetMaxSpeed();
+            if (other != null && carController != null && other.GetComponent<car>() != null)
+            {
+                float speed = carController.GetMaxSpeed();
+                float speed2 = other.GetComponent<car>().GetMaxSpeed();
 
-            if (speed > speed2) carController.SetMaxSpeed(speed2);
+                if (speed > speed2) carController.SetMaxSpeed(speed2);
+            }
         }
     }
 
