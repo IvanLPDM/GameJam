@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class SoundManager : MonoBehaviour
 {
-    public AudioClip choque, pipi, explosion, bandaSonora, sonidoAmbiental;
+    public AudioClip choque, pipi, explosion, sonidoAmbiental;
     public AudioSource audioSource_SFX;
     public AudioSource audioSource_BGM;
     void Start()
     {
-        audioSource_SFX = GetComponent<AudioSource>();
-        audioSource_BGM = GetComponent<AudioSource>();
+        //audioSource_SFX = GetComponent<AudioSource>();
+        //audioSource_BGM = GetComponent<AudioSource>();
 
-        audioSource_BGM.PlayOneShot(bandaSonora);
+        audioSource_BGM.Play();
         audioSource_BGM.PlayOneShot(sonidoAmbiental);
         audioSource_BGM.loop = true;
     }

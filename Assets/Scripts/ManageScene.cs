@@ -16,20 +16,16 @@ public class ManageScene : MonoBehaviour
     private int numCars = 0;
     public int numCarsDestroyed = 0;
     //Timer
-    private float startTime;
     public float elapsedTime;
     //Quejas
     public int quejas;
-    public TextMeshProUGUI timerText;
-    public TextMeshProUGUI crashed_text;
-    public TextMeshProUGUI quejas_txt;
-    public SoundManager soundManager;
 
+    private SoundManager soundManager;
     private bool finish = false;
     // Start is called before the first frame update
     void Start()
     {
-        startTime = Time.time;
+        soundManager = FindObjectOfType<SoundManager>();
 
         foreach (Transform child in transform)
         {
@@ -54,21 +50,13 @@ public class ManageScene : MonoBehaviour
     {
         if (!finish)
         {
-            elapsedTime = Time.time - startTime;
-
-            if (timerText != null)
-            {
-                timerText.text = elapsedTime.ToString("F2") + " s";
-                crashed_text.text = numCarsDestroyed.ToString();
-                quejas_txt.text = quejas.ToString();
-            }
+            elapsedTime += Time.deltaTime;
         }
 
         if (numCars == 0 && !finish)
         {
             //WIN
             FindObjectOfType<MenuLevel>().Win();
-            Debug.Log("HAS GANADO");
             finish = true;
             soundManager.StopSound_Bucle();
         }
@@ -77,7 +65,6 @@ public class ManageScene : MonoBehaviour
             //LOSE
             soundManager.StopSound_Bucle();
             FindObjectOfType<MenuLevel>().Lose();
-            Debug.Log("HAS PERDIDO");
             finish = true;
         }
         //Debug.Log(numCars);
