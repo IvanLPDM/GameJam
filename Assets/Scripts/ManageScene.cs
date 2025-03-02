@@ -8,6 +8,10 @@ public class ManageScene : MonoBehaviour
     public int numCarsToLose = 16;
     private int numCars = 0;
     private int numCarsDestroyed = 0;
+
+    public SoundManager soundManager;
+
+    private bool finish = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,17 +31,21 @@ public class ManageScene : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (numCars == 0)
+        if (numCars == 0 && !finish)
         {
             //WIN
             FindObjectOfType<MenuLevel>().Win();
             Debug.Log("HAS GANADO");
+            finish = true;
+            soundManager.StopSound_Bucle();
         }
-        else if (numCarsDestroyed >= numCarsToLose)
+        else if (numCarsDestroyed >= numCarsToLose && !finish)
         {
             //LOSE
+            soundManager.StopSound_Bucle();
             FindObjectOfType<MenuLevel>().Lose();
             Debug.Log("HAS PERDIDO");
+            finish = true;
         }
         //Debug.Log(numCars);
         //Debug.Log(numCarsDestroyed);
