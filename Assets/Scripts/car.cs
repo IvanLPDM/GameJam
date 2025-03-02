@@ -97,10 +97,8 @@ public class car : MonoBehaviour
             }
             else
             {
-                if (collision.gameObject.GetComponent<car>().IsGhost()) 
-                { 
-                    return;
-                }
+                car car_script = collision.gameObject.GetComponent<car>();
+                if (car_script == null || car_script.IsGhost()) return;
 
                 Instantiate(dust, this.transform.position, this.transform.rotation);
                 FindObjectOfType<SoundManager>().PlaySound("choque");
@@ -186,6 +184,8 @@ public class car : MonoBehaviour
             exp.Explode();
             Destroy(exp);
         }
+        Desaparicion des = gameObject.AddComponent<Desaparicion>();
+        des.setTimer(2);
         Destroy(this);
     }
 

@@ -12,6 +12,8 @@ public class Explosive : MonoBehaviour
     public GameObject Explosion;
     public car carController;
 
+    private bool exploding = false;
+
     void Start()
     {
         carController = GetComponent<car>();
@@ -19,6 +21,9 @@ public class Explosive : MonoBehaviour
 
     public void Explode()
     {
+        if (exploding) return;
+        Instantiate(Explosion, transform.position, Quaternion.identity);
+        exploding = true;
         FindObjectOfType<SoundManager>().PlaySound("explosion");
 
         Collider[] colliders = Physics.OverlapSphere(transform.position, explosionRadius);
@@ -31,18 +36,16 @@ public class Explosive : MonoBehaviour
                 Rigidbody rb = nearbyObject.GetComponent<Rigidbody>();
                 car carController = nearbyObject.GetComponent<car>();
 
-                if (rb != null)
+                if (rb != null && carController != null)
                 {
                     rb.AddExplosionForce(explosionForce, transform.position, explosionRadius, upwardModifier, ForceMode.Impulse);
                     carController.SetExplode(true);
                     rb.useGravity = false;
-                    //carController.SetExplode(true);
                 }
             }
         }
         carController.SetStop(true);
         Destroy(this.gameObject);
-        //carController.SetExplode(true);
     }
     
     private void OnCollisionEnter(Collision collision)
@@ -52,8 +55,6 @@ public class Explosive : MonoBehaviour
         {
             if (uses >= 1)
             {
-                Instantiate(Explosion, transform.position, Quaternion.identity);
-
                 Explode();
                 uses--;
             }
