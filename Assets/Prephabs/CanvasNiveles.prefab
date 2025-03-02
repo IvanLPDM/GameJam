@@ -633,6 +633,7 @@ MonoBehaviour:
   time_win_txt: {fileID: 6489467718020077724}
   cars_win_txt: {fileID: 6489467718177537360}
   quejas_win_txt: {fileID: 6489467718599833245}
+  lladra_text: {fileID: 1929667296360132184}
 --- !u!1 &6489467718962293015
 GameObject:
   m_ObjectHideFlags: 0
@@ -786,6 +787,10 @@ PrefabInstance:
     - target: {fileID: 657697539792626209, guid: 1c473235831d51d40871eddd94f264b1, type: 3}
       propertyPath: m_Name
       value: MenuNiveles
+      objectReference: {fileID: 0}
+    - target: {fileID: 657697539792626211, guid: 1c473235831d51d40871eddd94f264b1, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 657697539792626232, guid: 1c473235831d51d40871eddd94f264b1, type: 3}
       propertyPath: ui_game
@@ -998,6 +1003,11 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 657697539792626232, guid: 1c473235831d51d40871eddd94f264b1, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1c473235831d51d40871eddd94f264b1, type: 3}
+--- !u!1 &1929667296360132184 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4668181878117638920, guid: 1c473235831d51d40871eddd94f264b1, type: 3}
+  m_PrefabInstance: {fileID: 6489467718090476880}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &5994190963250001853 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 657697541562481389, guid: 1c473235831d51d40871eddd94f264b1, type: 3}

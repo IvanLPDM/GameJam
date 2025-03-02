@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    public GameObject menu, levels;
+    public GameObject menu, levels, credits;
 
     public void Start()
     {
@@ -18,6 +18,8 @@ public class MainMenu : MonoBehaviour
     {
         menu.SetActive(true);
         levels.SetActive(false);
+        credits.SetActive(false);
+
     }
 
     public void PlayGame()
@@ -25,9 +27,11 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene(1);
     }
 
-    public void Credits(string sceneName)
+    public void Credits()
     {
-        SceneManager.LoadScene(sceneName);
+        menu.SetActive(false);
+        levels.SetActive(false);
+        credits.SetActive(true);
     }
 
     public void Options(string sceneName)
