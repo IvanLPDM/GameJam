@@ -13042,7 +13042,7 @@ PrefabInstance:
       objectReference: {fileID: 7907855503184602403, guid: ff15788f5e4d1a646bb0888955c53b21, type: 3}
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: numCars
-      value: 12
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: fantasma
@@ -13071,6 +13071,14 @@ PrefabInstance:
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: numLimusinas
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
+      propertyPath: maxSpawnInterval
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
+      propertyPath: minSpawnInterval
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3051885977622651377, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: m_RootOrder

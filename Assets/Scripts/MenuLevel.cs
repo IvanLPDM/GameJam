@@ -82,17 +82,18 @@ public class MenuLevel : MonoBehaviour
         ui_game.SetActive(false);
         win.SetActive(true);
         audio_source.PlayOneShot(win_audio);
+        int stars = 3;
 
-        if(results.numCarsDestroyed <= results.numCarsToStar) cars_star.sprite = star_win;
-        else cars_star.sprite = star_lose;
+        if (results.numCarsDestroyed <= results.numCarsToStar) cars_star.sprite = star_win;
+        else { cars_star.sprite = star_lose; stars--; }
         cars_star_up.sprite = cars_star.sprite;
 
         if (results.elapsedTime <= results.time_star) time_star.sprite = star_win;
-        else time_star.sprite = star_lose;
+        else { time_star.sprite = star_lose; stars--; }
         time_star_up.sprite = time_star.sprite;
 
         if (results.quejas <= results.quejasStar) quejas_star.sprite = star_win;
-        else quejas_star.sprite = star_lose;
+        else { quejas_star.sprite = star_lose; stars--; }
         quejas_star_up.sprite = quejas_star.sprite;
 
         float elapsedTime = results.elapsedTime;
@@ -103,6 +104,15 @@ public class MenuLevel : MonoBehaviour
         //time_win_txt.text = results.elapsedTime.ToString("F2") + " s";
         cars_win_txt.text = results.numCarsDestroyed.ToString();
         quejas_win_txt.text = results.quejas.ToString();
+
+        //Guardar progreso en persistencia
+        int levelIndex = SceneManager.GetActiveScene().buildIndex;
+        string key = $"Level_{levelIndex}";
+        if (stars > PlayerPrefs.GetInt(key, 0))
+        {
+            PlayerPrefs.SetInt(key, stars);
+            PlayerPrefs.Save();
+        }
     }
 
 }

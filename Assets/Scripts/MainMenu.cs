@@ -45,4 +45,9 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("Nivel_"+ txt);
     }
+
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
 }
