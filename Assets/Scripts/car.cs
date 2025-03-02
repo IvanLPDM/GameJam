@@ -109,7 +109,7 @@ public class car : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (inmortal) return;
+        
         if (collision.gameObject.CompareTag("Car"))
         {
             if (ghost)
@@ -131,6 +131,7 @@ public class car : MonoBehaviour
                 {
                     return;
                 }
+                if (inmortal) return;
 
                 Instantiate(dust, this.transform.position, this.transform.rotation);
                 FindObjectOfType<SoundManager>().PlaySound("choque");
@@ -168,6 +169,10 @@ public class car : MonoBehaviour
 
         if (Vector3.Distance(transform.position, target.position) <= 0.5f)
         {
+            if(ladron)
+            {
+                FindObjectOfType<MenuLevel>().LoseLladra();
+            }
             Despawn(false);
             Destroy(gameObject);
         }

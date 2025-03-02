@@ -14,6 +14,7 @@ public class MenuLevel : MonoBehaviour
     public Sprite star_win, star_lose;
     public TextMeshProUGUI time_txt, cars_txt, quejas_txt;
     public TextMeshProUGUI time_win_txt, cars_win_txt, quejas_win_txt;
+    public GameObject lladra_text;
 
     private AudioSource audio_source;
     private ManageScene results;
@@ -24,6 +25,7 @@ public class MenuLevel : MonoBehaviour
         pause.SetActive(false);
         win.SetActive(false);
         ui_game.SetActive(true);
+        lladra_text.SetActive(false);
         Time.timeScale = 1.0f;
         audio_source = GetComponent<AudioSource>();
         results = FindObjectOfType<ManageScene>();
@@ -75,6 +77,13 @@ public class MenuLevel : MonoBehaviour
     {
         lose.SetActive(true);
         audio_source.PlayOneShot(lose_audio);
+    }
+
+    public void LoseLladra()
+    {
+        lose.SetActive(true);
+        audio_source.PlayOneShot(lose_audio);
+        lladra_text.SetActive(true);
     }
 
     public void Win()
