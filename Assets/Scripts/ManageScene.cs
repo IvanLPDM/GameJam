@@ -54,7 +54,7 @@ public class ManageScene : MonoBehaviour
             elapsedTime += Time.deltaTime;
         }
 
-        //Debug.Log(numCars);
+        Debug.Log(numCars);
         if (numCars == 0 && !finish)
         {
             //WIN

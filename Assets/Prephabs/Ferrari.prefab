@@ -178,6 +178,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2571680283167371345}
     - target: {fileID: 1753164324039152285, guid: 20cb68c706b999b46b39d414b04eb7d0, type: 3}
+      propertyPath: carRenderer
+      value: 
+      objectReference: {fileID: 2571680283167371345}
+    - target: {fileID: 1753164324039152285, guid: 20cb68c706b999b46b39d414b04eb7d0, type: 3}
       propertyPath: acceleration
       value: 1.2
       objectReference: {fileID: 0}
@@ -191,7 +195,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7754496082402400617, guid: 20cb68c706b999b46b39d414b04eb7d0, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20cb68c706b999b46b39d414b04eb7d0, type: 3}

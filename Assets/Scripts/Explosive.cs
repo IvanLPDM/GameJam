@@ -52,6 +52,8 @@ public class Explosive : MonoBehaviour
         
         if (collision.gameObject.CompareTag("Car"))
         {
+            car c = collision.gameObject.GetComponent<car>();
+            if (c == null || c.IsGhost()) return;
             if (uses >= 1)
             {
                 Explode();
