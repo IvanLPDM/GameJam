@@ -3466,9 +3466,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numCarsToStar: 6
-  time_star: 25
-  quejasStar: 0
-  numCarsToLose: 12
+  time_star: 45
+  quejasStar: 6
+  numCarsToLose: 10
   numCarsDestroyed: 0
   elapsedTime: 0
   quejas: 0
@@ -9456,7 +9456,7 @@ PrefabInstance:
       objectReference: {fileID: 7907855503184602403, guid: ff15788f5e4d1a646bb0888955c53b21, type: 3}
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: numCars
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: fantasma
