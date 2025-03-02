@@ -5,24 +5,42 @@ using UnityEngine.SceneManagement;
 
 public class MenuLevel : MonoBehaviour
 {
-    public GameObject lose, win;
+    public GameObject lose, win, pause;
     public AudioClip win_audio, lose_audio;
     private AudioSource audio_source;
 
     void Start()
     {
         lose.SetActive(false);
+        pause.SetActive(false);
         win.SetActive(false);
+        Time.timeScale = 1.0f;
         audio_source = GetComponent<AudioSource>();
     }
 
     private void Update()
     {
-        //if (Input.GetKeyDown(KeyCode.Alpha1))
-        //{ 
-        //    Debug.Log("space");
-        //    Lose();
-        //}
+
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if(pause.active == true)
+            {
+                pause.SetActive(false);
+                Time.timeScale = 1.0f;
+            }
+            else
+            {
+                pause.SetActive(true);
+                Time.timeScale = 0.0f;
+            }
+        }
+    }
+
+    public void play()
+    {
+        pause.SetActive(false);
+        Time.timeScale = 1.0f;
     }
 
     public void Restart()
