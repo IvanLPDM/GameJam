@@ -6,22 +6,23 @@ using UnityEngine;
 public class ManageScene : MonoBehaviour
 {
     //private List<Transform> semafaros = new List<Transform>();
-    public int numCarsToLose = 16;
+    [Header("Configuracion")]
     public int numCarsToStar;
+    public float time_star;
+    public int quejasStar;
+    public int numCarsToLose = 16;
+
+    [Header("Info")]
     private int numCars = 0;
-    private int numCarsDestroyed = 0;
-
+    public int numCarsDestroyed = 0;
     //Timer
-    private float startTime;  
-    private float elapsedTime;
-
+    private float startTime;
+    public float elapsedTime;
     //Quejas
-    private int quejas;
-
+    public int quejas;
     public TextMeshProUGUI timerText;
     public TextMeshProUGUI crashed_text;
     public TextMeshProUGUI quejas_txt;
-
     public SoundManager soundManager;
 
     private bool finish = false;
