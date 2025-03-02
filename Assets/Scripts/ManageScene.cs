@@ -22,6 +22,7 @@ public class ManageScene : MonoBehaviour
 
     private SoundManager soundManager;
     private bool finish = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -53,6 +54,7 @@ public class ManageScene : MonoBehaviour
             elapsedTime += Time.deltaTime;
         }
 
+        Debug.Log(numCars);
         if (numCars == 0 && !finish)
         {
             //WIN

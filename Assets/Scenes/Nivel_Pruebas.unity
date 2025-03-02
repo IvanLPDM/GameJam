@@ -3578,6 +3578,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 7625485007339855912, guid: ee0e399201d9dbf4e9a20e833928006b, type: 3}
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
+      propertyPath: limusina
+      value: 
+      objectReference: {fileID: 2639275672680302557, guid: edf87c0aedfcfbf48a692d08f3540ffc, type: 3}
+    - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: numBombas
       value: 4
       objectReference: {fileID: 0}
@@ -7140,6 +7144,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 7625485007339855912, guid: ee0e399201d9dbf4e9a20e833928006b, type: 3}
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
+      propertyPath: limusina
+      value: 
+      objectReference: {fileID: 2639275672680302557, guid: edf87c0aedfcfbf48a692d08f3540ffc, type: 3}
+    - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: numBombas
       value: 4
       objectReference: {fileID: 0}
@@ -7320,7 +7328,7 @@ MonoBehaviour:
   numCarsToStar: 6
   time_star: 25
   quejasStar: 0
-  numCarsToLose: 12
+  numCarsToLose: 60
   numCarsDestroyed: 0
   elapsedTime: 0
   quejas: 0
@@ -7370,6 +7378,10 @@ PrefabInstance:
       propertyPath: fantasma
       value: 
       objectReference: {fileID: 7625485007339855912, guid: ee0e399201d9dbf4e9a20e833928006b, type: 3}
+    - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
+      propertyPath: limusina
+      value: 
+      objectReference: {fileID: 2639275672680302557, guid: edf87c0aedfcfbf48a692d08f3540ffc, type: 3}
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: numBombas
       value: 4
@@ -12252,6 +12264,10 @@ PrefabInstance:
       propertyPath: fantasma
       value: 
       objectReference: {fileID: 7625485007339855912, guid: ee0e399201d9dbf4e9a20e833928006b, type: 3}
+    - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
+      propertyPath: limusina
+      value: 
+      objectReference: {fileID: 2639275672680302557, guid: edf87c0aedfcfbf48a692d08f3540ffc, type: 3}
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: numBombas
       value: 4
