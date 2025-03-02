@@ -14,7 +14,7 @@ public class car : MonoBehaviour
     public float maxTime = 20;
     public MeshRenderer carRenderer;
     public Material ghostMaterial;
-    public ManageScene manageScene;
+    public GameObject quejaSprite;
 
     [Header ("Campos opcionales")]
     public bool inmortal = false;
@@ -39,11 +39,13 @@ public class car : MonoBehaviour
     private BoxCollider bx;
     private bool blind = false;
     private bool explode = false;
+    private ManageScene manageScene;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         bx = GetComponent<BoxCollider>();
+        manageScene = FindObjectOfType<ManageScene>();
         timerCount = maxTime;
         initMaxSpeed = maxSpeed;
     }
@@ -60,11 +62,6 @@ public class car : MonoBehaviour
 
         carRenderer.material = ghostMaterial;
         if (trashRenderer != null) trashRenderer.material = ghostMaterial;
-    }
-
-    public void AsignManageScene(ManageScene manageScene_)
-    {
-        manageScene = manageScene_;
     }
 
     private void Enfantasmar()
@@ -154,15 +151,16 @@ public class car : MonoBehaviour
             if (timerCount <= 0)
             {
                 //PITA
-               
                 manageScene.Quejarse();
-                Debug.Log("PIPIPIPIPIPIPII");
+                quejaSprite.SetActive(true);
                 FindObjectOfType<SoundManager>().PlaySound("pipi");
+                timerCount = maxTime;
             }
         }
         else
         {
             timerCount = maxTime;
+            quejaSprite.SetActive(false);
         }
     }
     
