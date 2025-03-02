@@ -6,6 +6,10 @@ public class Desaparicion : MonoBehaviour
 {
     private float timer = 5f;
     
+    public void setTimer(float timer)
+    {
+        this.timer = timer;
+    }
 
     // Update is called once per frame
     void Update()
