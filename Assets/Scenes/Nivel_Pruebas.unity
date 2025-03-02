@@ -3558,6 +3558,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1198187213}
     m_Modifications:
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
+      propertyPath: tren
+      value: 
+      objectReference: {fileID: 6234571521500077440, guid: 919757c70f016e241bf22a05a3c00306, type: 3}
+    - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: bomba
       value: 
       objectReference: {fileID: 5170214626445213923, guid: 64305dc890709104c9d58f14907b8b2b, type: 3}
@@ -3566,6 +3570,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5896105231422885859, guid: f96276475d46c8d40b26718ac4d752fd, type: 3}
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
+      propertyPath: ladron
+      value: 
+      objectReference: {fileID: 988714283824840397, guid: 002c79abab25cdb4d81f07adc5042026, type: 3}
+    - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: ferrari
       value: 
       objectReference: {fileID: 7907855503184602403, guid: ff15788f5e4d1a646bb0888955c53b21, type: 3}
@@ -3573,6 +3581,10 @@ PrefabInstance:
       propertyPath: numCars
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
+      propertyPath: policia
+      value: 
+      objectReference: {fileID: 4629537744959512099, guid: d23258d517a5db149b850c3929f807c9, type: 3}
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: fantasma
       value: 
@@ -3583,7 +3595,11 @@ PrefabInstance:
       objectReference: {fileID: 2639275672680302557, guid: edf87c0aedfcfbf48a692d08f3540ffc, type: 3}
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: numBombas
-      value: 4
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
+      propertyPath: numTrenes
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: numCamiones
@@ -7124,6 +7140,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1198187213}
     m_Modifications:
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
+      propertyPath: tren
+      value: 
+      objectReference: {fileID: 6234571521500077440, guid: 919757c70f016e241bf22a05a3c00306, type: 3}
+    - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: bomba
       value: 
       objectReference: {fileID: 5170214626445213923, guid: 64305dc890709104c9d58f14907b8b2b, type: 3}
@@ -7132,6 +7152,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5896105231422885859, guid: f96276475d46c8d40b26718ac4d752fd, type: 3}
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
+      propertyPath: ladron
+      value: 
+      objectReference: {fileID: 988714283824840397, guid: 002c79abab25cdb4d81f07adc5042026, type: 3}
+    - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: ferrari
       value: 
       objectReference: {fileID: 7907855503184602403, guid: ff15788f5e4d1a646bb0888955c53b21, type: 3}
@@ -7139,6 +7163,10 @@ PrefabInstance:
       propertyPath: numCars
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
+      propertyPath: policia
+      value: 
+      objectReference: {fileID: 4629537744959512099, guid: d23258d517a5db149b850c3929f807c9, type: 3}
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: fantasma
       value: 
@@ -7149,7 +7177,11 @@ PrefabInstance:
       objectReference: {fileID: 2639275672680302557, guid: edf87c0aedfcfbf48a692d08f3540ffc, type: 3}
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: numBombas
-      value: 4
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
+      propertyPath: numTrenes
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: numCamiones
@@ -7162,6 +7194,10 @@ PrefabInstance:
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: numFantasmas
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
+      propertyPath: numPolicia1Spawn
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3051885977622651377, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: m_RootOrder
@@ -7359,6 +7395,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1198187213}
     m_Modifications:
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
+      propertyPath: tren
+      value: 
+      objectReference: {fileID: 6234571521500077440, guid: 919757c70f016e241bf22a05a3c00306, type: 3}
+    - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: bomba
       value: 
       objectReference: {fileID: 5170214626445213923, guid: 64305dc890709104c9d58f14907b8b2b, type: 3}
@@ -7367,6 +7407,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5896105231422885859, guid: f96276475d46c8d40b26718ac4d752fd, type: 3}
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
+      propertyPath: ladron
+      value: 
+      objectReference: {fileID: 988714283824840397, guid: 002c79abab25cdb4d81f07adc5042026, type: 3}
+    - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: ferrari
       value: 
       objectReference: {fileID: 7907855503184602403, guid: ff15788f5e4d1a646bb0888955c53b21, type: 3}
@@ -7374,6 +7418,10 @@ PrefabInstance:
       propertyPath: numCars
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
+      propertyPath: policia
+      value: 
+      objectReference: {fileID: 4629537744959512099, guid: d23258d517a5db149b850c3929f807c9, type: 3}
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: fantasma
       value: 
@@ -7384,7 +7432,11 @@ PrefabInstance:
       objectReference: {fileID: 2639275672680302557, guid: edf87c0aedfcfbf48a692d08f3540ffc, type: 3}
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: numBombas
-      value: 4
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
+      propertyPath: numTrenes
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: numCamiones
@@ -7395,7 +7447,15 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
+      propertyPath: numPolicias
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: numFantasmas
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
+      propertyPath: numPolicia1Spawn
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3051885977622651377, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
@@ -12245,6 +12305,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1198187213}
     m_Modifications:
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
+      propertyPath: tren
+      value: 
+      objectReference: {fileID: 6234571521500077440, guid: 919757c70f016e241bf22a05a3c00306, type: 3}
+    - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: bomba
       value: 
       objectReference: {fileID: 5170214626445213923, guid: 64305dc890709104c9d58f14907b8b2b, type: 3}
@@ -12253,6 +12317,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5896105231422885859, guid: f96276475d46c8d40b26718ac4d752fd, type: 3}
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
+      propertyPath: ladron
+      value: 
+      objectReference: {fileID: 988714283824840397, guid: 002c79abab25cdb4d81f07adc5042026, type: 3}
+    - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: ferrari
       value: 
       objectReference: {fileID: 7907855503184602403, guid: ff15788f5e4d1a646bb0888955c53b21, type: 3}
@@ -12260,6 +12328,10 @@ PrefabInstance:
       propertyPath: numCars
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
+      propertyPath: policia
+      value: 
+      objectReference: {fileID: 4629537744959512099, guid: d23258d517a5db149b850c3929f807c9, type: 3}
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: fantasma
       value: 
@@ -12270,7 +12342,11 @@ PrefabInstance:
       objectReference: {fileID: 2639275672680302557, guid: edf87c0aedfcfbf48a692d08f3540ffc, type: 3}
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: numBombas
-      value: 4
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
+      propertyPath: numTrenes
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: numCamiones
@@ -12282,6 +12358,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
       propertyPath: numFantasmas
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
+      propertyPath: numLadron1Spawn
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3051885977622651376, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}
+      propertyPath: numPolicia1Spawn
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3051885977622651377, guid: 7a6153c7b57059e4da1a729ca0f8fa5c, type: 3}

@@ -15,13 +15,13 @@ public class car : MonoBehaviour
     public MeshRenderer carRenderer;
     public Material ghostMaterial;
     public GameObject quejaSprite;
+    public GameObject dust;
 
     [Header ("Campos opcionales")]
     public bool inmortal = false;
     public Transform target;
 
     [Header ("Fantasma")]
-    public GameObject dust;
     public bool ghost = false;
     public float ghostRadius = 5f;
 
@@ -31,6 +31,11 @@ public class car : MonoBehaviour
     [Header("Explosivo")]
     public bool explosivo = false;
     public Explosive exp;
+
+    [Header("Policia + Ladron")]
+    public bool policia = false;
+    public bool ladron = false, pillado = false;
+    public GameObject dustAzul;
 
     private float timerCount;
     private float initMaxSpeed;
@@ -92,6 +97,16 @@ public class car : MonoBehaviour
         return explosivo;
     }
 
+    public bool IsLadron()
+    {
+        return ladron;
+    }
+
+    public bool IsPolice()
+    {
+        return policia;
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
         if (inmortal) return;
@@ -105,6 +120,17 @@ public class car : MonoBehaviour
             {
                 car car_script = collision.gameObject.GetComponent<car>();
                 if (car_script == null || car_script.IsGhost() || car_script.IsExplosive()) return;
+                if (car_script.IsPolice() && ladron)
+                {
+                    if (dustAzul != null) Instantiate(dustAzul, this.transform.position, this.transform.rotation);
+                    Despawn(false);
+                    Destroy(this.gameObject);
+                    return;
+                }
+                else if (policia &&  car_script.IsLadron())
+                {
+                    return;
+                }
 
                 Instantiate(dust, this.transform.position, this.transform.rotation);
                 FindObjectOfType<SoundManager>().PlaySound("choque");
@@ -177,7 +203,7 @@ public class car : MonoBehaviour
     private void Despawn(bool condition)
     {
         if (despawned) return;
-        manageScene.CarDespawn(true);
+        manageScene.CarDespawn(condition);
         despawned = true;
     }
 
