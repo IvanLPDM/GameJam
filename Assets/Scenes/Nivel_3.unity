@@ -1130,6 +1130,8 @@ MonoBehaviour:
   Red: {fileID: 21300000, guid: 01c589e7d22079e4fa7c11c391858b98, type: 3}
   Green: {fileID: 21300000, guid: 00d71da98167c8d4e9948b2342d18dcb, type: 3}
   key: 51
+  on: 1
+  color_off: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &145263344
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3465,10 +3467,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c21b640f92979264cba4c7c5cf5e261d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numCarsToStar: 6
+  numCarsToStar: 8
   time_star: 35
-  quejasStar: 6
-  numCarsToLose: 10
+  quejasStar: 7
+  numCarsToLose: 14
   numCarsDestroyed: 0
   elapsedTime: 0
   quejas: 0
@@ -8907,6 +8909,8 @@ MonoBehaviour:
   Red: {fileID: 21300000, guid: cb7a205f47235704aa872cf65cca1f24, type: 3}
   Green: {fileID: 21300000, guid: 71b3379db95aaec4dbd0366ad693f5d1, type: 3}
   key: 52
+  on: 1
+  color_off: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1343962808
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13275,6 +13279,8 @@ MonoBehaviour:
   Red: {fileID: 21300000, guid: 2d093f39d201bde4c910ffaafa20b4c4, type: 3}
   Green: {fileID: 21300000, guid: 1460c5ff23c77714fa8b4c56caec6103, type: 3}
   key: 50
+  on: 1
+  color_off: {r: 0, g: 0, b: 0, a: 0}
 --- !u!4 &2055968200 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d50cf4ea7689e754bb9c743d9e3e405a, type: 3}
@@ -13454,6 +13460,8 @@ MonoBehaviour:
   Red: {fileID: 21300000, guid: 28e9eb2a6c0e4b149b5e3f32252c088d, type: 3}
   Green: {fileID: 21300000, guid: e1715767aea9e2f40ab8fbbf54765e6a, type: 3}
   key: 49
+  on: 1
+  color_off: {r: 0, g: 0, b: 0, a: 0}
 --- !u!4 &2080341347 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 36604f7c00a98bc4c84c7339cfb8b830, type: 3}

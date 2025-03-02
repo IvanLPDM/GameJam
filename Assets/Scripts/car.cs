@@ -177,7 +177,7 @@ public class car : MonoBehaviour
     private void Despawn(bool condition)
     {
         if (despawned) return;
-        manageScene.CarDespawn(true);
+        manageScene.CarDespawn(condition);
         despawned = true;
     }
 
