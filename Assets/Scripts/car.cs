@@ -14,6 +14,7 @@ public class car : MonoBehaviour
     public float maxTime = 20;
     public MeshRenderer carRenderer;
     public Material ghostMaterial;
+    public ManageScene manageScene;
 
     [Header ("Campos opcionales")]
     public bool inmortal = false;
@@ -59,6 +60,11 @@ public class car : MonoBehaviour
 
         carRenderer.material = ghostMaterial;
         if (trashRenderer != null) trashRenderer.material = ghostMaterial;
+    }
+
+    public void AsignManageScene(ManageScene manageScene_)
+    {
+        manageScene = manageScene_;
     }
 
     private void Enfantasmar()
@@ -148,6 +154,8 @@ public class car : MonoBehaviour
             if (timerCount <= 0)
             {
                 //PITA
+               
+                manageScene.Quejarse();
                 Debug.Log("PIPIPIPIPIPIPII");
                 FindObjectOfType<SoundManager>().PlaySound("pipi");
             }
