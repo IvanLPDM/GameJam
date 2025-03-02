@@ -11,8 +11,6 @@ public class Explosive : MonoBehaviour
     public int uses = 1;
     public GameObject Explosion;
     public car carController;
-    public AudioSource sound;
-    public Transform sensorProximiti;
 
     void Start()
     {
@@ -47,26 +45,18 @@ public class Explosive : MonoBehaviour
         //carController.SetExplode(true);
     }
     
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision collision)
     {
-        GameObject objectColl = other.gameObject;
-        if (other.CompareTag("Car"))
+        
+        if (collision.gameObject.CompareTag("Car"))
         {
-            //comprobar si esta collisionando el collider que quiero
-            if(Vector3.Distance(sensorProximiti.position, objectColl.transform.position) <= 1.48f)
+            if (uses >= 1)
             {
-                Debug.Log("EXPLOSION" + other);
-                if (uses >= 1)
-                {
-                    Instantiate(Explosion, transform.position, Quaternion.identity);
+                Instantiate(Explosion, transform.position, Quaternion.identity);
 
-                    Explode();
-                    uses--;
-                }
+                Explode();
+                uses--;
             }
-
-
-            
         }
     }
 }
