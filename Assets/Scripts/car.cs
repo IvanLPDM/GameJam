@@ -27,6 +27,10 @@ public class car : MonoBehaviour
     [Header ("Camion")]
     public MeshRenderer trashRenderer;
 
+    [Header("Explosivo")]
+    public bool explosivo = false;
+    public Explosive exp;
+
     private float timerCount;
     private float initMaxSpeed;
     private bool modoTerrorista = false;
@@ -170,7 +174,13 @@ public class car : MonoBehaviour
 
     public void SetExplode(bool condition)
     {
-        explode = condition;
+        stop = condition;
+        if (explosivo) 
+        {
+            exp.Explode();
+            Destroy(exp);
+        }
+        Destroy(this);
     }
 
     public float GetMaxSpeed()
